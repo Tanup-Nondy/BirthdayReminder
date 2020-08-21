@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bday"
+    tools:context="com.androidlime.birthdayreminder.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp"
+        android:hint="Enter Name"
+        android:textColor="#2fe"
+        android:textColorHint="#2fc"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etb"
+        android:layout_below="@+id/etn"
+        android:layout_alignLeft="@+id/etn"
+        android:layout_alignStart="@+id/etn"
+        android:layout_marginTop="35dp"
+        android:hint="Enter Birthday"
+        android:textColor="#2fe"
+        android:textColorHint="#2fc"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btns"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewAll"
+        android:id="@+id/btnv"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btns"
+        android:layout_alignLeft="@+id/btns"
+        android:layout_alignStart="@+id/btns" />
+</RelativeLayout>
